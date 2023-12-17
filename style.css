@@ -1,0 +1,196 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(media/back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    
+    color: #ce1313;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.academic-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.academic-info h3{
+    color: #4b13cebf;    
+}
+.page-section h2 {
+    color: #4b13cebf;
+}
+.profile-image {
+    width: 300px;
+    border-radius: 50%;
+    margin:  auto;
+    display: block;
+    position: absolute; /* Position absolue par rapport à son conteneur (le header) */
+    top: 50%; /* Positionne le haut de l'image au milieu du header */
+    left: 50%; /* Positionne la gauche de l'image au milieu du header */
+    transform: translate(-50%, -50%);
+}
+.academic-entry {
+    border: 2px solid #ce1313;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.page-section {
+    padding: 20px;
+}
+
+.vertical-buttons {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 999;
+}
+
+.vertical-buttons ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.vertical-buttons ul li {
+    margin-right: 20px;
+}
+
+footer {
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+/* Ajoutez ces styles pour les nouvelles classes et images */
+
+.experience-category {
+    margin-bottom: 20px;
+}
+
+.experience-entry {
+    border: 2px solid #ce1313;
+    border-radius: 300px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.experience-entry h4 {
+    margin: 10px 0;
+}
+
+.experience-entry.with-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-entry.with-image img {
+    width: 7%; /* Ajuste la largeur de l'image à 100% du conteneur */
+    width: 150px;
+    border-radius: 10px; /* Rend l'image circulaire */
+    margin-bottom: 10px;
+}
+.reseau img {
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background 0.5s;
+}
+.reseau {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.top-buttons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Set the background color to transparent */
+    padding: 10px;
+    text-align: center;
+}
+
+.top-buttons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+/* Add styles for the active button if needed */
+.top-buttons a.active {
+    color: #ce1313; /* Change color for the active button */
+}
+#contact-form {
+    display: none; /* Hide the form by default */
+    padding: 20px;
+
+    margin-top: 20px; /* Adjust the top margin as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow for better visibility */
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #ce1313;
+    
+    cursor: pointer;
+}
+.vertical-buttons {
+    position: fixed;
+    top: 20px;
+    left: 50px; /* Adjust the left position as needed */
+    z-index: 999;
+}
+
+#contact-form {
+    display: none;
+    padding: 20px;
+    
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 100px; /* Adjust the left position as needed */
+    top: 60px; /* Adjust the top position as needed */
+}
